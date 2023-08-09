@@ -10,7 +10,6 @@ import { FeedbackList } from 'src/app/shared/feedbackVm';
 export class HomeComponent {
   feedbackList: FeedbackList[] = []
   constructor(private dataService: DataService) {
-    console.log(this.feedbackList);
     this.feedbackList = JSON.parse(sessionStorage.getItem('feedback')!)
   }
 }
