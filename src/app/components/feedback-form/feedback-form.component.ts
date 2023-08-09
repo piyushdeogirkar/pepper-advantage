@@ -44,7 +44,6 @@ export class FeedbackFormComponent {
     if (this.feedbackForm.valid) {
       this.feedbackList.push({ feedback: this.feedbackForm.value.description, rating: this.selectedRating, date: new Date() });
       sessionStorage.setItem('feedback', JSON.stringify(this.feedbackList));
-      console.log(this.feedbackList)
       this.toastr.success('Feedback Submit successfully');
       this.router.navigate(['/home']);
     }
