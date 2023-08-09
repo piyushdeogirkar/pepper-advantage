@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --purple: #411941;
+  --secondary-colours-purple-411941: #411941;
+  --stroke-light: #E0E0E0;
+  --gray-light-grey: #FAFAFA
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+.text-purple {
+  color: var(--purple, #411941);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+.title {
+  color: var(--purple, #411941);
+  font-size: 17px;
+}
+
+.font-roboto {
+  font-family: Roboto;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.error {
+  color: red;
+}

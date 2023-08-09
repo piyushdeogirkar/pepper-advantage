@@ -1,0 +1,27 @@
+.feedback-form-layout {
+  padding: 30px 20px;
+}
+
+.links-btn {
+  padding: 10px;
+  border-radius: 5px;
+  background: #E9ECEF;
+  color: #BDBDBD;
+}
+
+.active {
+
+  color: #DF0024;
+}
+
+.back-btn {
+  border-radius: 4px;
+  border: 1px solid var(--utility-buttons-primary-default, #411941);
+  background: #FFF;
+  color: black;
+}
+
+.submit-btn {
+  border-radius: 4px;
+  background: var(--utility-buttons-primary-default, #411941);
+}

@@ -1,0 +1,42 @@
+<div class="login-section">
+  <div class="login-card d-flex align-items-center  flex-column">
+    <div class="mt-5">
+      <span>
+        <img height="35" class="me-2" src="../../../../assets/logo.svg">
+      </span>
+      <h1 class="title mb-0 mt-3">Welcome Back!</h1>
+      <span class="signin-text">
+        Click below to sign in.
+      </span>
+
+      <form [formGroup]="loginForm">
+        <div class="mb-3 mt-3">
+          <label class="text-purple" for="email">Email</label>
+          <input formControlName="email" type="email" class="form-control" id="email" placeholder="Enter email">
+          <span *ngIf="
+          submitted &&
+          validators['email'].errors &&
+          validators['email'].errors['required']" class=" error">Enter Email</span>
+          <span *ngIf="
+          submitted &&
+          validators['email'].errors &&
+          validators['email'].errors['pattern']
+      ">Enter Valid Email </span>
+        </div>
+        <div class="mb-3">
+          <label class="text-purple" for="pwd">Password</label>
+          <input formControlName="password" type="password" class="form-control" id="pwd" placeholder="Enter password">
+          <span *ngIf="
+          submitted &&
+          validators['password'].errors &&
+          validators['password'].errors['required']" class="error">Enter Password</span>
+        </div>
+        <button (click)="login()" class="btn btn-primary sign-in-btn w-100">Sign In</button>
+      </form>
+      <span class="signin-text">
+        Facing issues with your account?
+      </span>
+      <a class="signin-text cursor-pointer"> Contact support</a>
+    </div>
+  </div>
+</div>

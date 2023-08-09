@@ -1,0 +1,26 @@
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-card {
+  width: 464px;
+  height: 420px;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+
+.signin-text {
+  color: var(--purple, #411941);
+  font-size: 11px;
+  opacity: 0.8;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.sign-in-btn {
+  border-radius: 4px;
+  background: var(--dark-blue, #002841) !important;
+}
